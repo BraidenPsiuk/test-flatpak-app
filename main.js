@@ -1,4 +1,3 @@
-// console.log("Hello world, from a packaged node script running in a sandbox");
 const fs = require("node:fs");
 
 const SENSOR_TYPE = "iio:device2/in_accel";
