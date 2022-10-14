@@ -1,0 +1,17 @@
+{
+  "name": "test-flatpak-app",
+  "version": "1.0.0",
+  "bin": "./main.js",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "build": "npm run pkg-pinephone && flatpak-builder build-dir dev.braiden.TestFlatpakApp.yml --force-clean && flatpak-builder --user --install --force-clean build-dir dev.braiden.TestFlatpakApp.yml",
+    "pkg-pinephone": "pkg -t latest-linux-arm64 .",
+    "pkg-crossarch": "pkg -t latest-linux ."
+  },
+  "author": "",
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "pkg": "^5.8.0"
+  }
+}

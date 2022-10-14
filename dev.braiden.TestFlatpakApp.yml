@@ -1,0 +1,13 @@
+app-id: dev.braiden.TestFlatpakApp
+runtime: org.freedesktop.Platform
+runtime-version: '21.08'
+sdk: org.freedesktop.Sdk
+command: test-flatpak-app
+modules:
+  - name: test-flatpak-app
+    buildsystem: simple
+    build-commands:
+      - install -D test-flatpak-app /app/bin/test-flatpak-app
+    sources:
+      - type: file
+        path: test-flatpak-app

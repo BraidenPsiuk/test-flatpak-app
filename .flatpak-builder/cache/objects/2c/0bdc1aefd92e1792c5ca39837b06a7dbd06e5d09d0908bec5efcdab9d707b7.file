@@ -1,0 +1,5 @@
+[Application]
+name=dev.braiden.TestFlatpakApp
+runtime=org.freedesktop.Platform/aarch64/21.08
+sdk=org.freedesktop.Sdk/aarch64/21.08
+command=test-flatpak-app

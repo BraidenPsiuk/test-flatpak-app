@@ -1,0 +1,24 @@
+{
+  "id" : "dev.braiden.TestFlatpakApp",
+  "runtime" : "org.freedesktop.Platform",
+  "runtime-version" : "21.08",
+  "runtime-commit" : "151b30ed55a817f43fece60256e1147bec544244617999455f527c572d1598f1",
+  "sdk" : "org.freedesktop.Sdk",
+  "sdk-commit" : "130f922d9d89ad2ad0beb5818f0735939f8fda4ee5f601b1b08042c94ea296e4",
+  "command" : "test-flatpak-app",
+  "modules" : [
+    {
+      "name" : "test-flatpak-app",
+      "buildsystem" : "simple",
+      "sources" : [
+        {
+          "path" : "test-flatpak-app",
+          "type" : "file"
+        }
+      ],
+      "build-commands" : [
+        "install -D test-flatpak-app /app/bin/test-flatpak-app"
+      ]
+    }
+  ]
+}
